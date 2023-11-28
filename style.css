@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 1rem;
+    height: 4rem;
+}
+
+#loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 130px;
+}
+
+#loader img {
+    max-width: 300px;
+    margin: 0;
+}
+
+#pokemon-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: #f3f3f3;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 16px 14px;
+    box-shadow: 5px 5px 10px #c9c8c8;
+}
+
+.card h4 {
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+.card img.pokemon-img {
+    height: 134px;
+}
+
+.card .info {
+    padding-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.card .info h5 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card .info p {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.btn {
+    display: block;
+    margin-top: 14px;
+    background: black;
+    mix-blend-mode: darken;
+    color: white;
+    text-transform: uppercase;
+    padding: 9px 10px;
+    border-radius: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card.grass {
+    background: #8fe78f;
+}
+
+.card.fire {
+    background: #ff8484;
+}
+
+.card.water {
+    background: #84ffed;
+}
+
+.card.bug {
+    background: #fff5a6;
+}
+
+.card.rock {
+    background: #9d9d9d;
+}
+
+.card.electric {
+    background: #ffbe67;
+}
+
+.card.ghost {
+    background: #e780ff;
+}
+
+.card.psychic {
+    background: #b6b6b6;
+}
+
+.card.dragon {
+    background: #ffa3a3;
+}
+
+.card.ice {
+    background: #93fff2;
+}
+
+.popup {
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup .pokemon-img{
+    max-height: 300px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navigation-buttons{
+    text-align: center;
+    font-size: 30px;
+}
